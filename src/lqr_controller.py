@@ -53,7 +53,7 @@ class LqrController(LqrSolver):
             controller_parameters.max_lqr_throttle = LQR_THROTTLE_LIMIT
         if controller_parameters.max_raw_throttle > 1:
             controller_parameters.max_raw_throttle = RAW_THROTTLE_LIMIT
-        if 0 <= controller_parameters.throttle_attenuation_factor > 1:
+        if controller_parameters.throttle_attenuation_factor <= 0 or controller_parameters.throttle_attenuation_factor > 1:
             controller_parameters.throttle_attenuation_factor = 1
 
     @property

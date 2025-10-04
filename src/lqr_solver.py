@@ -165,9 +165,6 @@ class LqrSolver:
     @property
     def lqr_error(self):
         lqr_error = self.state - self.target_state
-        """Reverse logic for Z axis from North East Down referential because ASUQTR sensor uses altitude
-        instead of depth"""
-        lqr_error[2] = self.state[2] - self.target_state[2]
         # The following operation makes sure the error is between -pi and pi.
         lqr_error[3:6] = [self._angle_transfer(angle) for angle in lqr_error[3:6]]
         return lqr_error
