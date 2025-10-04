@@ -1,0 +1,3 @@
+# Mock the signal from the actuators node to True. This is necessary because starting the control node
+# without the actuator node would result in endless waiting loop for this signal
+motors_ready: true

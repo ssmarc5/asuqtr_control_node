@@ -1,0 +1,15 @@
+# Define the mode used in mission control.
+behavior_running_on_launch: false
+
+# Determines how fast the AUV will update target angels (in rad) received from commands.
+# Should be between 0.07 (slow) and 0.5 (really fast)
+angular_speed_factor: 0.008
+
+# Determines how fast the AUV will update target position (in meters) received from commands.
+# Should be between 0.07 (slow) and 0.5 (really fast)
+position_speed_factor: 0.0008
+
+# Determines the minimum % at which joystick are detected.
+# 0.1 means 10% of the joystick will be ignored
+# Increase the value if your joysticks are loose and cause unwanted movements
+joy_dead_zone: 0.2

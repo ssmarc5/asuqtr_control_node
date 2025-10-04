@@ -1,0 +1,26 @@
+# Maximum refresh rate for throttles produced by LQR (Hz)
+max_lqr_loop_rate: 30
+
+# Max throttle % (between 0 and 1) lqr can use in each motors. This stands for both motors direction, foward
+# and reverse
+max_lqr_throttle: 0.5
+
+# Maximum motor throttle allocated for uncontrolled throttles. This is for cases where LQR is disabled
+max_raw_throttle: 0.8
+
+#Factor used to reduce LQR results to operable throttles
+attenuation_factor: 0.1
+
+# Angle error deemed acceptable for a target angle command, in degrees
+target_angle_threshold: 5
+
+# Distance error deemed acceptable for a target distance command, in meters
+target_position_threshold: 0.05
+
+# Maximum refresh rate of the action server loop. This loop continuously checks if control target is reach
+# Tune this down if control node CPU useage is too high. Tune it up if behaviors transitions feel too slow
+max_loop_rate: 3
+
+# Maximum refresh rate of throttle value sent to motors. Tune it down if CPU useage is too high, but it may negatively
+# impact the control algorithm's stability
+max_control_rate: 30

@@ -1,0 +1,2 @@
+# Only true for the Full Autonomous launch file or single node testing
+lqr_enabled_on_start: true

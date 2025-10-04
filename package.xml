@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>asuqtr_control_node</name>
+  <version>1.0.0</version>
+  <description>The control node serves the purpose of controlling the motors' thrusts.</description>
+  <maintainer email="gabriel.tremblay@uqtr.ca">Gabriel Tremblay</maintainer>
+  <license>Apache License, Version 2.0</license>
+
+  <url type="website">https://confluence.asuqtr.com</url>
+  <url type="repository">https://bitbucket.asuqtr.com/TODO</url>
+  <author>Gabriel Tremblay</author>
+  <author>Bastien Côté</author>
+  <author>William Flynn</author>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>actionlib</depend>
+  <depend>actionlib_msgs</depend>
+
+  <build_depend>message_generation</build_depend>
+  
+  <exec_depend>message_runtime</exec_depend>
+
+</package>

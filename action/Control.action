@@ -1,0 +1,14 @@
+# Define the goal
+bool absolute
+float32 roll  # Specify desired position and angle
+float32 pitch
+float32 yaw
+float32 x
+float32 y
+float32 z
+---
+# Define the result
+float32 result 
+---
+# Define a feedback message
+float32 percent_complete
